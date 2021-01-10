@@ -1,14 +1,16 @@
-[{
+[
+{
   "modid": "deepmoblearning",
-  "name": "Deep Mob Learning",
-  "description": "Server friendly mob loot acquisition.",
+  "name": "DML Relearned",
+  "description": "Server-friendly virtual mob farming. A rewrite of xt9's DeepMobLearning.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "https://minecraft.curseforge.com/projects/deep-mob-learning",
+  "url": "",
   "updateUrl": "",
-  "authorList": ["xt9 (IterationFunk)"],
-  "credits": "",
+  "authorList": ["mustapelto"],
+  "credits": "xt9, for the original mod",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
-}]
+}
+]
