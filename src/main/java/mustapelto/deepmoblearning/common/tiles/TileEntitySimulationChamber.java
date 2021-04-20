@@ -54,7 +54,6 @@ public class TileEntitySimulationChamber extends TileEntityMachine {
         int pristineChance = DataModelHelper.getPristineChance(getDataModel());
         int random = ThreadLocalRandom.current().nextInt(100);
         pristineSuccess = (random < pristineChance);
-
         // Consume Polymer Clay
         getPolymerClay().shrink(1);
     }
@@ -66,33 +65,32 @@ public class TileEntitySimulationChamber extends TileEntityMachine {
 
     @Override
     protected void finishCrafting() {
-        super.finishCrafting();
-
         ItemStack dataModel = getDataModel();
 
         MetadataDataModel dataModelMetadata = DataModelHelper.getDataModelMetadata(dataModel);
-        if (dataModelMetadata.isInvalid())
-            return;
+        if (!dataModelMetadata.isInvalid()){
+            DataModelHelper.addSimulation(dataModel);
 
-        DataModelHelper.addSimulation(dataModel);
-
-        ItemStack oldLivingMatterOutput = outputLiving.getStackInSlot(0);
-        if (!oldLivingMatterOutput.isEmpty()) {
-            oldLivingMatterOutput.grow(1);
-        } else {
-            ItemStack newLivingMatterOutput = dataModelMetadata.getLivingMatter(oldLivingMatterOutput.getCount() + 1);
-            outputLiving.setStackInSlot(0, newLivingMatterOutput);
-        }
-
-        if (pristineSuccess) {
-            ItemStack oldPristineMatterOutput = outputPristine.getStackInSlot(0);
-            if (!oldPristineMatterOutput.isEmpty()) {
-                oldPristineMatterOutput.grow(1);
+            ItemStack oldLivingMatterOutput = outputLiving.getStackInSlot(0);
+            if (!oldLivingMatterOutput.isEmpty()) {
+                oldLivingMatterOutput.grow(1);
             } else {
-                ItemStack newPristineMatterOutput = dataModelMetadata.getPristineMatter(oldPristineMatterOutput.getCount() + 1);
-                outputPristine.setStackInSlot(0, newPristineMatterOutput);
+                ItemStack newLivingMatterOutput = dataModelMetadata.getLivingMatter(oldLivingMatterOutput.getCount() + 1);
+                outputLiving.setStackInSlot(0, newLivingMatterOutput);
+            }
+
+            if (pristineSuccess) {
+                ItemStack oldPristineMatterOutput = outputPristine.getStackInSlot(0);
+                if (!oldPristineMatterOutput.isEmpty()) {
+                    oldPristineMatterOutput.grow(1);
+                } else {
+                    ItemStack newPristineMatterOutput = dataModelMetadata.getPristineMatter(oldPristineMatterOutput.getCount() + 1);
+                    outputPristine.setStackInSlot(0, newPristineMatterOutput);
+                }
             }
         }
+
+        super.finishCrafting();//This will call resetCrafting(), so it needs to be called at the end
     }
 
     @Override
