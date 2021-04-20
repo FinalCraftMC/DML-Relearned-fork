@@ -111,7 +111,7 @@ public class MetadataDataModel extends Metadata {
 
         // Get associated Living Matter
         livingMatter = DMLRegistry.getLivingMatter(livingMatterString);
-        pristineMatter = DMLRegistry.getPristineMatter(pristineMatterRegistryName.getResourcePath());
+        pristineMatter = DMLRegistry.getPristineMatter(getMetadataID());
     }
 
     private void buildCraftingRecipe(ImmutableList<String> ingredientStringList) {
