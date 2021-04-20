@@ -44,9 +44,9 @@ public abstract class TileEntityMachine extends TileEntityBase implements ITicka
 
     @Override
     public void update() {
-        if (world.isRemote && guiOpen) {
+        if (world.isRemote) {
             // check if progress or energy state has changed on the server
-            requestUpdatePacketFromServer();
+            if (guiOpen) requestUpdatePacketFromServer();
             return;
         }
 
