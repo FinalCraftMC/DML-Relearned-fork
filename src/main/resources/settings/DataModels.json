@@ -31,6 +31,9 @@
       "displayName": "Creeper",
       "livingMatter": "overworldian",
       "simulationRFCost": 80,
+      "craftingIngredients": [
+        "minecraft:gunpowder"
+      ],
       "associatedMobs": [
         "minecraft:creeper"
       ],
@@ -54,6 +57,9 @@
       "displayName": "Ender Dragon",
       "livingMatter": "extraterrestrial",
       "simulationRFCost": 2560,
+      "craftingIngredients": [
+        "draconicevolution:dragon_heart"
+      ],
       "associatedMobs": [
         "minecraft:ender_dragon"
       ],
@@ -80,6 +86,9 @@
       "displayNamePlural": "Endermen",
       "livingMatter": "extraterrestrial",
       "simulationRFCost": 512,
+      "craftingIngredients": [
+        "minecraft:ender_pearl"
+      ],
       "associatedMobs": [
         "minecraft:enderman",
         "minecraft:endermite"
@@ -105,6 +114,9 @@
       "displayName": "Ghast",
       "livingMatter": "hellish",
       "simulationRFCost": 372,
+      "craftingIngredients": [
+        "minecraft:ghast_tear"
+      ],
       "associatedMobs": [
         "minecraft:ghast"
       ],
@@ -127,6 +139,9 @@
       "displayName": "Guardian",
       "livingMatter": "overworldian",
       "simulationRFCost": 340,
+      "craftingIngredients": [
+        "minecraft:prismarine_shard"
+      ],
       "associatedMobs": [
         "minecraft:guardian",
         "minecraft:elder_guardian"
@@ -153,6 +168,9 @@
       "displayName": "Shulker",
       "livingMatter": "extraterrestrial",
       "simulationRFCost": 256,
+      "craftingIngredients": [
+        "minecraft:shulker_shell"
+      ],
       "associatedMobs": [
         "minecraft:shulker"
       ],
@@ -176,6 +194,9 @@
       "displayName": "Skeleton",
       "livingMatter": "overworldian",
       "simulationRFCost": 80,
+      "craftingIngredients": [
+        "minecraft:bone"
+      ],
       "associatedMobs": [
         "minecraft:skeleton",
         "minecraft:stray",
@@ -204,6 +225,9 @@
       "displayName": "Slime",
       "livingMatter": "overworldian",
       "simulationRFCost": 150,
+      "craftingIngredients": [
+        "minecraft:slime_ball"
+      ],
       "associatedMobs": [
         "minecraft:slime",
         "minecraft:magma_cube"
@@ -228,6 +252,9 @@
       "displayName": "Spider",
       "livingMatter": "overworldian",
       "simulationRFCost": 80,
+      "craftingIngredients": [
+        "minecraft:string"
+      ],
       "associatedMobs": [
         "minecraft:spider",
         "minecraft:cave_spider",
@@ -260,6 +287,9 @@
       "displayNamePlural": "Witches",
       "livingMatter": "overworldian",
       "simulationRFCost": 120,
+      "craftingIngredients": [
+        "minecraft:glass_bottle"
+      ],
       "associatedMobs": [
         "minecraft:witch"
       ],
@@ -286,6 +316,9 @@
       "displayName": "Wither",
       "livingMatter": "extraterrestrial",
       "simulationRFCost": 2048,
+      "craftingIngredients": [
+        "minecraft:nether_star"
+      ],
       "associatedMobs": [
         "minecraft:wither"
       ],
@@ -309,6 +342,9 @@
       "displayName": "Wither Skeleton",
       "livingMatter": "hellish",
       "simulationRFCost": 880,
+      "craftingIngredients": [
+        "minecraft:skull,1,1"
+      ],
       "associatedMobs": [
         "minecraft:wither_skeleton"
       ],
@@ -333,6 +369,9 @@
       "displayName": "Zombie",
       "livingMatter": "overworldian",
       "simulationRFCost": 80,
+      "craftingIngredients": [
+        "minecraft:rotten_flesh"
+      ],
       "associatedMobs": [
         "minecraft:zombie",
         "minecraft:husk",
@@ -368,6 +407,9 @@
       "displayName": "Thermal Elemental",
       "livingMatter": "overworldian",
       "simulationRFCost": 256,
+      "craftingIngredients": [
+        "thermalfoundation:material 1 2048"
+      ],
       "associatedMobs": [
         "thermalfoundation:blizz",
         "thermalfoundation:blitz",
@@ -400,6 +442,9 @@
       "displayName": "Forest creature",
       "livingMatter": "twilight",
       "simulationRFCost": 256,
+      "craftingIngredients": [
+        "twilightforest:naga_scale"
+      ],
       "extraTooltip": "Gain data by defeating non-vanilla mobs in the Naga Courtyard and Lich Tower.",
       "associatedMobs": [
         "twilightforest:naga",
@@ -431,6 +476,9 @@
       "displayName": "Swamp creature",
       "livingMatter": "twilight",
       "simulationRFCost": 256,
+      "craftingIngredients": [
+        "twilightforest:hydra_chop"
+      ],
       "extraTooltip": "Gain data by defeating non-vanilla mobs in the Swamp Labyrinth and Hydra Lair.",
       "associatedMobs": [
         "twilightforest:minotaur",
@@ -468,6 +516,9 @@
       "displayName": "Glacier inhabitant",
       "livingMatter": "twilight",
       "simulationRFCost": 256,
+      "craftingIngredients": [
+        "twilightforest:alpha_fur"
+      ],
       "extraTooltip": "Gain data by defeating non-vanilla mobs in the Yeti Lair and Ice Tower.",
       "associatedMobs": [
         "twilightforest:yeti_alpha",
@@ -504,6 +555,9 @@
       "displayName": "Darkwood creature",
       "livingMatter": "twilight",
       "simulationRFCost": 256,
+      "craftingIngredients": [
+        "twilightforest:armor_shard"
+      ],
       "extraTooltip": "Gain data by defeating non-vanilla mobs in the Goblin Knight Stronghold and Dark Tower.",
       "associatedMobs": [
         "twilightforest:redcap",
@@ -546,6 +600,9 @@
       "displayName": "Blue Slime",
       "livingMatter": "overworldian",
       "simulationRFCost": 256,
+      "craftingIngredients": [
+        "tconstruct:edible 1 1"
+      ],
       "associatedMobs": [
         "tconstruct:blue_slime"
       ],
@@ -576,6 +633,9 @@
       "displayName": "Rogue Android",
       "livingMatter": "overworldian",
       "simulationRFCost": 256,
+      "craftingIngredients": [
+        "matteroverdrive:tritanium_ingot"
+      ],
       "associatedMobs": [
         "matteroverdrive:ranged_rogue_android",
         "matteroverdrive:rogue_android"
