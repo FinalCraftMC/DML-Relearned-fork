@@ -96,7 +96,9 @@ public class GuiLootFabricator extends GuiMachine {
             craftingError = CraftingError.NONE;
     }
 
-    private void resetOutputData(@Nonnull MetadataDataModel newData, boolean preselectedOutput) {
+    private void resetOutputData(MetadataDataModel newData, boolean preselectedOutput) {
+        if (newData == null) return;
+
         currentDataModelMetadata = newData;
 
         if (currentDataModelMetadata.isInvalid()) {
