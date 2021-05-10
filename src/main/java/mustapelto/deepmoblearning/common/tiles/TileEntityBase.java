@@ -22,8 +22,10 @@ public abstract class TileEntityBase extends TileEntity {
     }
 
     protected void sendUpdatePacketToClient() {
-        markDirty();
-        DMLPacketHandler.sendToClient(new MessageUpdateTileEntity(this), world, pos);
+        if (world != null && pos != null){ //On TileEntity<init> world may not be present
+            markDirty();
+            DMLPacketHandler.sendToClient(new MessageUpdateTileEntity(this), world, pos);
+        }
     }
 
     public ByteBuf getUpdateData() {
